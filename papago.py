@@ -42,5 +42,5 @@ def run_translate(client_id: str, client_secret: str, english_text: str) -> str:
         print("Error Code : " + rescode)
 
 # Test Code - 영어 문장을 한글로 번역
-# source = "I go school."
+# source = "I go to work every day."
 # print(run_translate(client_key[0]['client_id'], client_key[0]['client_secret'], source))
