@@ -54,5 +54,5 @@ def post_blog_by_keyword(keyword: str, count: str, expose: bool, isKorean: bool)
 
 
 if __name__ == '__main__':
-    # '성공적인 투자 방법'이라는 키워드로 공개 게시글 한글로 3개 작성
-    post_blog_by_keyword(keyword='Successful investment method', count='3', expose=True, isKorean=True)
+    # '성공적인 투자 방법'이라는 키워드로 공개 게시글 영문으로 5개 작성
+    post_blog_by_keyword(keyword='Successful investment method', count='5', expose=True, isKorean=False)
