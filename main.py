@@ -23,7 +23,7 @@ def post_blog_by_keyword(keyword: str, count: str, expose: bool, isKorean: bool)
     if isKorean:
         article_words = '400'  # 한글 블로그 글자수
     else:
-        article_words = '3000'  # 영문 블로그 글자수
+        article_words = '2000'  # 영문 블로그 글자수
 
     for item in subject_result:
         article_result = chat_gpt.make_article(item, article_words)  # 주제 기반으로 게시글 작성
