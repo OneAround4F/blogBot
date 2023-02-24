@@ -1,2 +1,2 @@
 # blogBot
-Posting blog articles using chatGPT
+Posting blog articles using ChatGPT
