@@ -10,7 +10,6 @@ blog_name = 'YOUR_BLOG_NAME'  # 티스토리 블로그 이름
 
 # 키워드 기반으로 자동 글쓰기
 def post_blog_by_keyword(keyword: str, count: str, expose: bool, isKorean: bool):  # 입력값 : 주제, 작성 개수, 게시글 노출 여부, # 언어 설정
-    access_key = unsplash.access_key  # Unsplash 액세스 키
 
     # 키워드 기반으로 주제 n개 뽑기
     subject_keyword = keyword  # 키워드
@@ -34,7 +33,7 @@ def post_blog_by_keyword(keyword: str, count: str, expose: bool, isKorean: bool)
         title = subject_result[i]
         article = article_list[i]
         tag = chat_gpt.make_tag(title, '4')  # 태그 4개 생성
-        img = unsplash.random_image(title, '5', access_key)  # 제목과 어울리는 이미지 찾기
+        img = unsplash.random_image(title, '5')  # 제목과 어울리는 이미지 찾기
 
         if isKorean:  # 한글을 선택한 경우
             title = papago.run_translate(papago.client_key[i]['client_id'], papago.client_key[i]['client_secret'], title)  # 제목 번역
