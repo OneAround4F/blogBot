@@ -40,8 +40,8 @@ def make_article(subject: str, number: str) -> str:  # 입력값 : 주제, 글�
   article = response['choices'][0]['text']
   return article
 
-# Test Code - 한국의 유명한 가수라는 주제로 2000자 내외 글쓰기
-# print(make_article("Famous Singer in Korea", '2000'))
+# Test Code - 클래식 음악 주제로 2000자 내외 글쓰기
+# print(make_article("Classical Music", '2000'))
 
 
 def make_tag(text: str, count: str) -> str:  # 입력값 : 텍스트, 개수
@@ -59,5 +59,5 @@ def make_tag(text: str, count: str) -> str:  # 입력값 : 텍스트, 개수
   tag = response['choices'][0]['text']
   return tag
 
-# Test Code - 한국의 유명한 가수와 어울리는 태그 5개 뽑기
-# print(make_tag("Famous Singer in Korea", '5'))
+# Test Code - 클래식 음악에 어울리는 태그 5개 뽑기
+# print(make_tag("Classical Music", '5'))
