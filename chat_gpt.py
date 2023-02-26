@@ -60,5 +60,4 @@ def make_tag(text: str, count: str) -> str:  # 입력값 : 텍스트, 개수
   return tag
 
 # Test Code - 한국의 유명한 가수와 어울리는 태그 5개 뽑기
-# text = "Famous Singer in Korea"
-# print(make_tag(text, '5'))
+# print(make_tag("Famous Singer in Korea", '5'))
