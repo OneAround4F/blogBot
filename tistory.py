@@ -72,5 +72,5 @@ def post_blog(title, content, tag, expose, blog_name):
     print(response.text)
 
 
-# Test Code - 입력값 : 제목, 내용, 태그, 노출 여부, 블로그 이름
+# Test Code - 입력값 : 제목, 내용, 태그, 노출 여부, 블로그 이름(https://YOUR_BLOG_NAME.tistory.com)
 # post_blog("제목", "내용", "태그", False, 'YOUR_BLOG_NAME')
